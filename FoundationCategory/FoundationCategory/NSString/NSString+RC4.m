@@ -12,7 +12,7 @@
 
 +(NSString*) rc4Key:(NSString*) key str:(NSString*) str
 {
-    if (key.length==0) {
+    if (key.length==0 || str.length == 0) {
         return nil;
     }
     int j = 0;

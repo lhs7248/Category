@@ -18,6 +18,7 @@
 		17AB59461E0B7FA60079F340 /* NSString+DES.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AB59411E0B7FA60079F340 /* NSString+DES.m */; };
 		17AB59471E0B7FA60079F340 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AB59431E0B7FA60079F340 /* NSString+Hash.m */; };
 		17AB59481E0B7FA60079F340 /* NSString+RC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AB59451E0B7FA60079F340 /* NSString+RC4.m */; };
+		17AB594C1E0B88260079F340 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AB594B1E0B88260079F340 /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		17AB59431E0B7FA60079F340 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		17AB59441E0B7FA60079F340 /* NSString+RC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RC4.h"; sourceTree = "<group>"; };
 		17AB59451E0B7FA60079F340 /* NSString+RC4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RC4.m"; sourceTree = "<group>"; };
+		17AB594A1E0B88260079F340 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		17AB594B1E0B88260079F340 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				17AB59431E0B7FA60079F340 /* NSString+Hash.m */,
 				17AB59441E0B7FA60079F340 /* NSString+RC4.h */,
 				17AB59451E0B7FA60079F340 /* NSString+RC4.m */,
+				17AB594A1E0B88260079F340 /* NSString+Base64.h */,
+				17AB594B1E0B88260079F340 /* NSString+Base64.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				17AB59031E0B7D500079F340 /* AppDelegate.m in Sources */,
 				17AB59471E0B7FA60079F340 /* NSString+Hash.m in Sources */,
 				17AB59001E0B7D500079F340 /* main.m in Sources */,
+				17AB594C1E0B88260079F340 /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

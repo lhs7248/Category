@@ -1,5 +1,5 @@
 //
-//  NSString+RC4.h
+//  NSString+Base64.h
 //  FoundationCategory
 //
 //  Created by lhs7248 on 16/12/22.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (RC4)
-+(NSString*) rc4Key:(NSString*) key str:(NSString*) str;
+@interface NSString (Base64)
+
 @end
