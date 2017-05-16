@@ -10,4 +10,8 @@
 
 @interface NSString (DES)
 
+/// 加密
++(NSString *) encryptUseDES:(NSString *)plainText key:(NSString *)key;
+//解密
++(NSString *)decryptUseDES:(NSString *)cipherText key:(NSString *)key;
 @end

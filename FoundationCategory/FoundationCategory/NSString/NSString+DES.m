@@ -21,8 +21,9 @@ const Byte iv[] = {1,2,3,4,5,6,7,8};
     NSData *textData = [plainText dataUsingEncoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [textData length];
     NSUInteger bufferSize=([textData length] + kCCKeySizeDES) & ~(kCCKeySizeDES -1);
-    unsigned char buffer[bufferSize];
-    memset(buffer, 0, sizeof(char));
+//    unsigned char buffer[bufferSize];
+//    memset(buffer, 0, sizeof(char));
+    void *buffer = malloc(bufferSize);
     size_t numBytesEncrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
                                           kCCOptionPKCS7Padding,
@@ -51,8 +52,9 @@ const Byte iv[] = {1,2,3,4,5,6,7,8};
     
     NSData * cipherdata = [[NSData alloc]initWithBase64EncodedData:[cipherText dataUsingEncoding:NSUTF8StringEncoding] options:0];
     NSUInteger bufferSize=([cipherdata length] + kCCKeySizeDES) & ~(kCCKeySizeDES -1);
-    unsigned char buffer[bufferSize];
-    memset(buffer, 0, sizeof(char));
+//    unsigned char buffer[bufferSize];
+//    memset(buffer, 0, sizeof(char));
+    void *buffer = malloc(bufferSize);
     size_t numBytesDecrypted = 0;
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmDES,
                                           kCCOptionPKCS7Padding,
