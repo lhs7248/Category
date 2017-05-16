@@ -10,4 +10,12 @@
 
 @interface NSString (Base64)
 
+
+//base64加密
++(NSString *)base64EncodingWithData:(NSData *)sourceData;
+
++(NSString *)base64EncodingWithString:(NSString *)sourceStr;
+
+// 解密
++(NSData *)base64DecodingWithString:(NSString *)sourceString;
 @end
